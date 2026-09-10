@@ -102,9 +102,9 @@ public class TrabajoPracticoEjercicio1 extends javax.swing.JFrame {
 
     private void BotonVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonVerificarActionPerformed
         String usuario = EntradaUsuario.getText().trim();
-        char[] PassCorrecta = {'1', '2', '3', '4', '5', '6', '7', '8'};
+        final char[] PassCorrecta = {'1', '2', '3', '4', '5', '6', '7', '8'};
         char password[] = EntradaPass.getPassword();
-        if (usuario.equals("alumno@ulp.edu.ar") && java.util.Arrays.equals(password,PassCorrecta)){
+        if (usuario.equals("alumno@ulp.edu.ar") && Arrays.equals(password,PassCorrecta)){
             JOptionPane.showMessageDialog(this,"Bienvenido al sistema");
         }else JOptionPane.showMessageDialog(this,"Usuario y/o contraseña incorrecta");
     }//GEN-LAST:event_BotonVerificarActionPerformed
